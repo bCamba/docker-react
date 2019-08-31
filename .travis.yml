@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t bCamba/docker-react -f Dockerfile.dev .
+  - docker build -t bcamba/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true bCamba/docker-react yarn test --coverage
+  - docker run -e CI=true bcamba/docker-react yarn test --coverage
